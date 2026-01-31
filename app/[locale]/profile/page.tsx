@@ -21,7 +21,7 @@ function ProfileView({ userData }: ProfileViewProps) {
     <div className="space-y-6">
       <div className="flex justify-center sm:justify-start">
         <img
-          src={"https://raqamli-manaviyat.uz/api/users/file/" + removeApiBaseUrl(userData.avatar)}
+          src={"https://mobile-production-732f.up.railway.app/api/users/file/" + removeApiBaseUrl(userData.avatar)}
           alt={userData.name}
           className="h-32 w-32 rounded-full border-4 border-primary object-cover shadow-lg sm:h-40 sm:w-40"
         />
@@ -66,7 +66,9 @@ function ProfileForm({ userData, setIsEditing }: ProfileFormProps) {
     password: "",
   });
   const [avatarFile, setAvatarFile] = useState<File | null>(null);
-  const [avatarPreview, setAvatarPreview] = useState("https://raqamli-manaviyat.uz/api/users/file/" + removeApiBaseUrl(userData.avatar) || "/placeholder-user.jpg");
+  const [avatarPreview, setAvatarPreview] = useState(
+    "https://mobile-production-732f.up.railway.app/api/users/file/" + removeApiBaseUrl(userData.avatar) || "/placeholder-user.jpg",
+  );
 
   const [saving, setSaving] = useState(false);
   const { updateUser, refreshUser } = useAuth();
@@ -131,7 +133,7 @@ function ProfileForm({ userData, setIsEditing }: ProfileFormProps) {
       <div className="flex justify-center sm:justify-start">
         <div className="relative">
           <img
-            src={"https://raqamli-manaviyat.uz/api/users/file/" + removeApiBaseUrl(userData.avatar)}
+            src={"https://mobile-production-732f.up.railway.app/api/users/file/" + removeApiBaseUrl(userData.avatar)}
             alt={userData.name}
             className="h-32 w-32 rounded-full border-4 border-primary object-cover shadow-lg sm:h-40 sm:w-40"
           />

@@ -1,4 +1,4 @@
-fetch("https://raqamli-manaviyat.uz/api/auth/login", {
+fetch("https://mobile-production-732f.up.railway.app/api/auth/login", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",

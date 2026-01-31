@@ -20,7 +20,7 @@ export function removeApiBaseUrll(url: string): string {
 }
 
 export function removeBookUrl(url: string): string {
-  return url?.replace("https://raqamli-manaviyat.uz/api/book/file/", "") || "";
+  return url?.replace("https://mobile-production-732f.up.railway.app/api/book/file/", "") || "";
 }
 
 export function removeUndefined(url: string): string {
