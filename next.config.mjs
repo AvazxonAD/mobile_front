@@ -16,4 +16,17 @@ const nextConfig = {
   },
 };
 
+
+**4. Railway'da manual deploy:**
+
+Agar avtomatik aniqlamasa:
+- Service → **Settings** → **Build Command**:
+```
+  npm install && npm run build
+```
+- **Start Command**:
+```
+  npm start
+```
+
 export default withNextIntl(nextConfig);
